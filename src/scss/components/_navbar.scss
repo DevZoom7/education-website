@@ -1,0 +1,85 @@
+@use "../utils/variables" as var;
+@use "../utils/mixins" as mixin;
+@use "../utils/placeholders";
+
+.navbar {
+   margin-top: 57px;
+   @include mixin.flex-center($justify-content: null);
+   > * {
+      flex-grow: 1;
+   }
+   &__logo {
+      width: clamp(86px, 16vw, 162px);
+   }
+   &__links {
+      display: flex;
+      flex-grow: 1.5;
+      li {
+         flex-grow: 1;
+      }
+      button {
+         width: 100%;
+         padding-block: 10px;
+         text-align: center;
+         color: var.color(slate-gray);
+         font-family: Nunito Sans;
+         font-weight: 400;
+         cursor: pointer;
+         @include mixin.transition(color);
+         &.active {
+            color: var.color(bright-orange);
+            position: relative;
+            @include mixin.flex-center($align-items: null);
+            .underline {
+               $size: 3px;
+               position: absolute;
+               width: 75%;
+               height: $size;
+               border-radius: $size * .5;
+               background-color: var.color(bright-orange);
+               bottom: 0;
+            }
+         }
+      }
+      li:first-child button {
+         font-weight: 700;
+         color: var.color(bright-orange)
+      }
+      @media (max-width: var.breakpoint(medium)) {
+         display: none;
+      }
+   }
+   &__sign-up {
+      display: flex;
+      justify-content: flex-end;
+      button {
+         color: var.color(black);
+         font-family: Nunito Sans;
+         font-weight: 700;
+         padding-inline: clamp(20px, 6vw, 46px);
+         padding-block: clamp(12px, 3vw, 18px);
+         border: 1px solid var.color(black);
+         cursor: pointer;
+         position: relative;
+         @include mixin.transition;
+         &::before {
+            content: "";
+            @extend %absolute-center;
+            background-color: var.color(bright-orange);
+            clip-path: circle(20px at 100% 100%);
+            @include mixin.transition(clip-path);
+            z-index: -1;
+         }
+         &:hover {
+            color: var.color(white);
+            border-color: var.color(bright-orange);
+            &::before {
+               clip-path: circle(100%);
+            }
+         }
+      }
+   }
+   @media (max-width: var.breakpoint(medium)){
+      margin-top: 17px;
+   }
+}

@@ -1,0 +1,21 @@
+$_colors: (
+   white: #fff,
+   bright-orange: #FF5202,
+   slate-gray: #5C5555,
+   black: #1A1A1A,
+   midnight-blue: #262543,
+   light-gray: #f6f6f6,
+);
+
+$_breakpoints: (
+   medium: 894px,
+   x-small: 330px
+);
+
+@function color($args...) {
+   @return map-get($_colors, $args...);
+}
+
+@function breakpoint($args...) {
+   @return map-get($_breakpoints, $args...);
+}

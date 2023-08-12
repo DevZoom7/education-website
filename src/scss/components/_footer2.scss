@@ -1,0 +1,85 @@
+@use "../utils/variables" as var;
+@use "../utils/mixins" as mixin;
+
+.footer2 {
+   position: relative;
+   display: flex;
+   justify-content: flex-start;
+   gap: clamp(40px, 8vw, 90px);
+   padding-block: clamp(25px, 7vw, 70px);
+   @include mixin.stretch-x-bg(var.color(midnight-blue));
+   @media (max-width: 1230px) {
+      align-items: center;
+      flex-direction: column;
+   }
+   &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      @include mixin.stretch-x-bg(var.color(white));
+   }
+   &__links {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: fit-content;
+      gap: clamp(15px, 3vw, 30px);
+      font-size: clamp(16px, 4vw, 24px);
+      color: var.color(white);
+      font-family: Nunito Sans;
+      @media (max-width: 500px) {
+         grid-template-columns: 1fr;
+         text-align: center;
+         &:first-child {
+            position: relative;
+            &::after {
+               content: "•";
+               position: absolute;
+               bottom: -30px;
+               left: 50%;
+               transform: translateX(-50%);
+            }
+         }
+      }
+      li:last-child {
+         grid-column: 1/3;
+         text-align: center;
+         place-content: center;
+         @media (max-width: 500px) {
+            grid-column: 1/2;
+         }
+      }
+   }
+   &__link {
+      font-weight: 600;
+      color: #1CD7AF;
+      position: relative;
+      justify-content: center;
+      display: inline-flex;
+      @include mixin.transition($property: color);
+      &::before {
+         $size: 2px;
+         content: "";
+         position: absolute;
+         width: 0;
+         height: $size;
+         border-radius: $size * .5;
+         background-color: #1CD7AF;
+         bottom: 0px;
+         @include mixin.transition($property: width, $duration: .2s)
+      }
+      &:hover::before {
+         width: 100%;
+      }
+   }
+   &__alert {
+      display: flex;
+      gap: 10px;
+      @media (max-width: 500px) {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+}
