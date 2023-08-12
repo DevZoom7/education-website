@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/education-website/static/css/main.acd1bf1a.css",
+    "main.css": "/education-website/static/css/main.b26ed47f.css",
     "main.js": "/education-website/static/js/main.380444fe.js",
     "static/media/man.svg": "/education-website/static/media/man.a9f3a505b99e6d8c07b979ca9ccfe8aa.svg",
     "static/media/LEMONMILK-Regular.otf": "/education-website/static/media/LEMONMILK-Regular.55fc24317b9c2b507dd8.otf",
@@ -15,11 +15,11 @@
     "static/media/arrow1.svg": "/education-website/static/media/arrow1.09e4caa03616a323828e2258321402d9.svg",
     "static/media/arrow2.svg": "/education-website/static/media/arrow2.6752a76b169cb99a65966f7ed25ae364.svg",
     "static/media/ellipse.svg": "/education-website/static/media/ellipse.4fd52e773d6df5b47f2e94dabb32f6cc.svg",
-    "main.acd1bf1a.css.map": "/education-website/static/css/main.acd1bf1a.css.map",
+    "main.b26ed47f.css.map": "/education-website/static/css/main.b26ed47f.css.map",
     "main.380444fe.js.map": "/education-website/static/js/main.380444fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.acd1bf1a.css",
+    "static/css/main.b26ed47f.css",
     "static/js/main.380444fe.js"
   ]
 }
