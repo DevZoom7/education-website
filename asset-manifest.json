@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/education-website/static/css/main.acd1bf1a.css",
+    "main.js": "/education-website/static/js/main.380444fe.js",
+    "static/media/man.svg": "/education-website/static/media/man.a9f3a505b99e6d8c07b979ca9ccfe8aa.svg",
+    "static/media/LEMONMILK-Regular.otf": "/education-website/static/media/LEMONMILK-Regular.55fc24317b9c2b507dd8.otf",
+    "static/media/LEMONMILK-Medium.otf": "/education-website/static/media/LEMONMILK-Medium.3d615d9795b5607c2478.otf",
+    "static/media/logo.svg": "/education-website/static/media/logo.e06fd1958e68baafa2035e4e94a2d786.svg",
+    "static/media/icon2.svg": "/education-website/static/media/icon2.4560b97789a6718538f6e3ff4afd4c71.svg",
+    "static/media/icon1.svg": "/education-website/static/media/icon1.e82a97573755356926e617ffc372b886.svg",
+    "static/media/icon3.svg": "/education-website/static/media/icon3.b513131fec17297b5c43096be8ef3cf1.svg",
+    "static/media/long-arrow.svg": "/education-website/static/media/long-arrow.de96d27a1d1ce1684c655f744b9a5cdf.svg",
+    "index.html": "/education-website/index.html",
+    "static/media/i-icon.svg": "/education-website/static/media/i-icon.195eed2036e3c356ba4520dd143ebda8.svg",
+    "static/media/arrow1.svg": "/education-website/static/media/arrow1.09e4caa03616a323828e2258321402d9.svg",
+    "static/media/arrow2.svg": "/education-website/static/media/arrow2.6752a76b169cb99a65966f7ed25ae364.svg",
+    "static/media/ellipse.svg": "/education-website/static/media/ellipse.4fd52e773d6df5b47f2e94dabb32f6cc.svg",
+    "main.acd1bf1a.css.map": "/education-website/static/css/main.acd1bf1a.css.map",
+    "main.380444fe.js.map": "/education-website/static/js/main.380444fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.acd1bf1a.css",
+    "static/js/main.380444fe.js"
+  ]
+}
